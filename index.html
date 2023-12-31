@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- color of address bar in mobile browser -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light">
+
+    <!-- Primary Meta Tags -->
+    <title>WhatsApp Generator</title>
+    <meta name="keywords" content="WhatsApp, MuhamDaily, MuhamPedia" />
+    <meta name="author" content="Muhammad Mauribi" />
+    <meta name="title" content="WhatsApp Generator - Send Messages Easily" />
+    <meta name="description"
+        content="WhatsApp generator is a website to make it easier for you to send messages to destination numbers with just one click" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wa.muhamdaily.com" />
+    <meta property="og:author" content="Muhammad Mauribi" />
+    <meta property="og:title" content="WhatsApp Generator - Send Messages Easily" />
+    <meta property="og:description"
+        content="WhatsApp generator is a website to make it easier for you to send messages to destination numbers with just one click" />
+    <meta property="og:image" content="assets/thumbnail.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wa.muhamdaily.com" />
+    <meta property="twitter:title" content="Muhammad Mauribi - Send Messages Easily" />
+    <meta property="twitter:description"
+        content="WhatsApp generator is a website to make it easier for you to send messages to destination numbers with just one click" />
+    <meta property="twitter:image" content="assets/thumbnail.png" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #313338;
+        }
+
+        .container {
+            max-width: 500px;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4 text-white">WhatsApp Generator</h1>
+        <form action="generate.php" method="post">
+            <div class="form-floating mb-3">
+                <input type="number" name="phone" class="form-control" id="floatingInput" placeholder="085xxxxx"
+                    required autofocus autocomplete="phone">
+                <label for="floatingInput">Nomor Tujuan</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea name="message" class="form-control" id="floatingPassword" placeholder="Isi pesan"></textarea>
+                <label for="floatingPassword">Pesan</label>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
